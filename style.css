@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
 :root {
-    --Azul-1: #3a6889;
-    --Azul-2: #add8e6;
-    --Cinza-3: #7895a4;
-    --Laranja-4: #ff7f50;
-    --Azul-5: #0084ff;
+    --Azul-1: #F53B0F;
+    --Azul-2: #F58B0F;
+    --Cinza-3: #F5630F;
+    --Laranja-4: #F50D08;
+    --Azul-5: #F5A500;
 
     
     --texto-de-Destaque: 'Oswald', Sans-serif;
@@ -19,14 +19,13 @@
 }
 
 body {
-    background-color: rgb(173, 173, 173);
-    margin-top: 30px;
+    background-color: #F53B0F;
+    
     
 }
 
 nav, main, header {
-    max-width: 800px ;
-    min-width: 320px ;
+   
     margin: auto;
    
 }
@@ -38,7 +37,7 @@ nav {
     color: white;
     font-size: 19px;
     text-align: center;
-    padding: 0px 8px 0px 8px;
+    padding: 13px 0px 13px 0px;
     
 }
 
@@ -51,13 +50,14 @@ nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    
     border-radius: 5px;
     transition-duration: .5s;
+    padding: 10px;
+    
 }
 
 nav a:hover {
-    background-color: #78cae6;
+    background-color: var(--Azul-5);
     color: white;
 }
 
@@ -69,13 +69,14 @@ nav a:hover {
     border: 10px solid var(--Azul-1);
     border-radius: 10px 20px ;
     box-shadow: 3px 4px 5px black;
+    max-width: 720px;
     
 }
 
 header{
-    padding: 8px 8px 0px 8px;
+    padding: 30px;
     text-align: center;
-    border-radius: 10px 10px 0px 0px;
+   
     background-image: linear-gradient(to bottom, var(--Azul-1), var(--Azul-2) );
    
     
@@ -87,7 +88,7 @@ a.externo::after {
 }
 
 footer {
-    margin-top: 50px;
+   
     margin-bottom: 0px;
     text-align: center;
     background-color: #0084ff;
@@ -103,12 +104,24 @@ footer > p > a {
     color: aquamarine;
 }
 
+ p {
+    max-width: 800px;
+    min-width: 500px;
+}
+
+section {
+    max-width: 800px;
+    min-width: 500px;
+}
+
 aside {
     background-color: var(--Laranja-4);
     padding: 8px;
     border-radius: 10px;
     box-shadow: 3px 4px 5px black;
     margin: 25px;
+    max-width: 750px;
+    
 
 }
 
@@ -119,7 +132,7 @@ aside p {
 main {
     padding: 8px;
     
-    border-radius: 0px 0px 10px 10px;
+   
     background-color: white;
     color: black;
     margin: auto;
@@ -153,6 +166,7 @@ p {
     padding: 5px;
     margin: 0px;
     line-height: 2em;
+   
 }
 
 ul {  
@@ -164,3 +178,4 @@ ul {
 .imagem {
     text-align: center;
 }
+
