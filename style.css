@@ -13,10 +13,14 @@
     --outros: 'Raleway',  Sans-serif;
 }
 
-
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
 body {
     background-color: rgb(173, 173, 173);
+    margin-top: 30px;
     
 }
 
@@ -41,6 +45,7 @@ nav {
 header h1 {
     margin: 0px;
     padding: 10px;
+    font-variant: small-caps;
 }
 nav a {
     text-decoration: none;
