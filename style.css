@@ -17,14 +17,15 @@
     margin: 0px;
     padding: 0px;
 }
-
-
-
+body {
+    margin: 0;
+}
 nav, main, header {
    
     margin: auto;
    
 }
+
 
 nav {
    background-color: var(--Azul-1);
@@ -72,11 +73,15 @@ nav a:hover {
 }
 
 header{
-    padding: 30px;
+    
     text-align: center;
    
-    background-image: linear-gradient(to bottom, var(--Azul-1), var(--Azul-2) );
+    height: 667px;
+    background-image: url(Academias.jpeg);
+    background-size: 100vw 667px;
+    background-repeat: no-repeat;
    
+
     
   
 }
@@ -88,7 +93,7 @@ a.externo::after {
 footer {
    
     margin-bottom: 0px;
-    text-align: center;
+    
     background-color: var(--Azul-1);
 
     
@@ -96,7 +101,7 @@ footer {
 
 footer p {
     color: white;
-    min-width: 100vw;
+    text-align: center;
 }
 
 footer > p > a {
@@ -108,18 +113,8 @@ footer a:hover {
     text-decoration: underline;
 }
 
- p {
-    max-width: 1000px;
-    
-   
-   
-}
 
-section {
-    max-width: 1000px;
-    min-width: 100vw;
-  
-}
+
 
 aside {
     background-color: var(--Laranja-4);
@@ -137,12 +132,14 @@ aside p {
 }
 
 main {
-    padding: 8px;
     
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 2vw;
    
     background-color: white;
     color: black;
-    margin: auto;
+   
    
    
    
@@ -155,7 +152,7 @@ header h1 {
 
 h1, h2{
     font-family: var(--texto-de-Destaque);
-   
+   max-width: 80vw;
 }
 
 .title {

@@ -18,7 +18,7 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="#">Treino</a>
-        <a href="#">Histórico</a>
+        <a href="#">Login</a>
         <a href="#">Contato</a>
     </nav>
     <main>
@@ -56,19 +56,19 @@
             <div class="overflow-x">
                 <table>
                     <tfoot style="background-color: grey;">
-                        <th colspan="2" style="color: white;">Total de Series</th>
+                        <th scope="row"  colspan="2" style="color: white;">Total de Series</th>
                         <td style="color: white;">16</td>
                     </tfoot>
                     <thead>
                         <tr>
-                            <th>Treinos</th>
-                            <th>Exercicios</th>
-                            <th>Series</th>
+                            <th scope="col">Treinos</th>
+                            <th scope="col">Exercicios</th>
+                            <th scope="col">Series</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th rowspan="3">Quadriceps</th>
+                            <th rowspan="3" scope="rowgroup">Quadriceps</th>
                             <td>Agachamento</td>
                             <td rowspan="2">3</td>
                         </tr>
@@ -83,7 +83,7 @@
                             <td>2</td>
                         </tr>
                         <tr>
-                            <th rowspan="3">Posterior</th>
+                            <th rowspan="3" scope="rowgroup">Posterior</th>
                             <td>Mesa flexora</td>
                             <td>5</td>
                         </tr>
@@ -98,7 +98,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th>Panturilha</th>
+                            <th scope="row">Panturilha</th>
                             <td>Gemêos sentado</td>
                             <td>3</td>
                         </tr>
