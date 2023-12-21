@@ -18,11 +18,7 @@
     padding: 0px;
 }
 
-body {
-    background-color: #F53B0F;
-    
-    
-}
+
 
 nav, main, header {
    
@@ -63,13 +59,15 @@ nav a:hover {
 
 
 .citacao {
-    margin: 10px;
+    margin: 25px;
     color: white;
     background-color: var(--Azul-1);
     border: 10px solid var(--Azul-1);
     border-radius: 10px 20px ;
     box-shadow: 3px 4px 5px black;
     max-width: 720px;
+    
+    
     
 }
 
@@ -91,27 +89,36 @@ footer {
    
     margin-bottom: 0px;
     text-align: center;
-    background-color: #0084ff;
+    background-color: var(--Azul-1);
+
     
 }
 
 footer p {
     color: white;
+    min-width: 100vw;
 }
 
 footer > p > a {
     text-decoration: none;
-    color: aquamarine;
+    color: var(--Azul-5);
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
  p {
-    max-width: 800px;
-    min-width: 500px;
+    max-width: 1000px;
+    
+   
+   
 }
 
 section {
-    max-width: 800px;
-    min-width: 500px;
+    max-width: 1000px;
+    min-width: 100vw;
+  
 }
 
 aside {
@@ -151,7 +158,7 @@ h1, h2{
    
 }
 
-h2 {
+.title {
     font-size: 1.2em;
     background-image: linear-gradient(to right, var(--Azul-1), transparent);
     color: whitesmoke;

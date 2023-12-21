@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+td, th {
+    border: 1px solid var(--Azul-1);
+    border-collapse: collapse;
+    padding: 10px;
+    height: 15px;
+    text-align: center;
+   
+    max-width: 135px;
+    font-weight: bolder;
+    font-family: var(--texto-de-Destaque);
+    color: var(--Cinza-3);
+    
+
+}
+
+table {
+    border-collapse:collapse;
+    margin: 10px;
+    overflow-x: auto;
+}
+
+div.overflow-x {
+    overflow-x: auto;
+}
+
+caption {
+    font-size: 1.2em;
+    font-family: var(--texto-de-Destaque);
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    background-color: var(--Cinza-3);
+}
+
+tr#exercicio {
+    background-color: var(--Azul-1);
+    
+}
+
+tr#exercicio td {
+    color: white;
+}
+
+thead {
+    background-color: gray;
+    
+}
+
+thead > tr > th {
+    color:white
+}
+
