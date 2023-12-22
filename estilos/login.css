@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+
+
+div.form {
+    position: relative;
+    border: black solid 1px;
+    height: 500px;
+    
+    
+}
+
+div#login {
+    border: red solid 1px;
+    height: 500px;
+    
+   width: 50cap;
+    display:inline-block;
+}
+
+div#cadastro {
+    border: green solid 1px;
+    height: 500px;
+    left: 50%;
+    top: 50%;
+    width: 50cap;
+    display:inline-block;
+}
+
+section {
+   
+    background-color: var(--Azul-2);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.527);
+    border: black solid 1px;
+    padding: 5px;
+}
+
+
+section#login {
+   position: absolute;
+ 
+  
+}
+
+section#cadastro {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+section.form p, h1 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+section.form input {
+   padding: 3px;
+   
+   
+}
