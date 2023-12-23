@@ -7,7 +7,7 @@
 }
 
 body, html {
-    background-image: linear-gradient(to bottom, orange, black);
+    background-image: linear-gradient(to bottom, orange, rgb(122, 49, 0));
     height: 100vh;
     width: 100vw;
 }
@@ -66,11 +66,13 @@ section div#form {
     text-align: center;
     background-color: rgb(255, 115, 0);
     border-radius: 10px;
+    border: rgb(255, 115, 0) solid 2px;
     margin: 5px 0px 5px 0px;
     align-items: center;
     display: block;
     height: 40px;
     padding: 4px 0px;
+
     
     
 }
@@ -99,6 +101,13 @@ section div#form {
     transform: translateY(-10px);
     height: 100%;
 }
+
+.campo > input:focus-within {
+    border: none;
+    background-color: white;
+}
+
+
 
 form > input[type=submit] {
     font-size: 1em;

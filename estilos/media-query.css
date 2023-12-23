@@ -2,13 +2,13 @@
 
 
 
-
+/* TABLET */
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     section#login {
         width: 90vw;
         flex-direction: row;
-        
+        height: 280px;
     }
 
     section#login > div#imagem {
@@ -25,12 +25,13 @@
     
 
  }
-    
+    /* PC */
 }
 
 @media screen and (min-width: 992px) {
     section#login {
     width: 900px;
+    height: 320px;
     flex-direction: row;
 
     }
@@ -47,7 +48,7 @@
     
         width: 50%;
         height: 100%;
-         
+        transform: translateY(5%);
      
       }
 }
