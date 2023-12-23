@@ -20,29 +20,31 @@ main {
 
 
 
-section {
+section#login {
    
   background-color: white;
     border-radius: 20px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.527);
     border: black solid 1px;
     
-    width: 400px;
-    height: 650px;
+    width: 250px;
+    height: 500px;
     
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     overflow: hidden; /* Esconder tudo que estiver fora da borda*/
-    
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 
 section > div#imagem {
-    background: red url(../imagems/BOB.jpg) no-repeat;
+    background: url(../imagems/BOB.jpg) no-repeat;
     background-size: cover;
-    height: 400px;
+    height: 250px;
     display: block;
     
 }
@@ -57,7 +59,7 @@ section p, h1 {
     color: black;
     font-weight: bold;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.2rem;
     
 
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - GymUP</title>
     <link rel="stylesheet" href="../gymup/estilos/login.css">
+    <link rel="stylesheet" href="../gymup/estilos/media-query.css">
 </head>
 
 <body>
@@ -13,11 +14,11 @@
 
     <main>
 
-        <section>
+        <section id="login">
             <div id="imagem"></div>
 
             <div id="form">
-                <h1 style="text-align: center;">LOGIN</h1>
+               
                 <form action="login.php" method="POST" autocomplete="off">
                     <!--cria relação entre o <p> e o <input> utilizando o <label>-->
                     <p><label for="iuser">Usuario:</label> <input type="text" name="user" id="iuser" minlength="8"
