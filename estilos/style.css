@@ -114,7 +114,15 @@ footer a:hover {
     text-decoration: underline;
 }
 
+.div-flex {
 
+    display: flex;
+    
+    align-items: center;
+    
+    justify-content: center;
+    
+    }
 
 
 aside {
@@ -134,9 +142,9 @@ aside p {
 
 main {
     
-    margin-left: 5vw;
-    margin-right: 5vw;
-    margin-top: 2vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 8vh;
    
     background-color: white;
     color: black;
