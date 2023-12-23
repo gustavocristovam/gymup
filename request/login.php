@@ -2,8 +2,8 @@
 session_start();
 include('connect.php');
 
-if(empty($_POST['usuario']) || empty($_POST['senha'])) {
-	header('Location: ../gymup/index.html');
+if(empty($_POST['user']) || empty($_POST['password'])) {
+	echo'NADA INFORMADO!';
 	exit();
 }
 
@@ -18,7 +18,7 @@ $row = mysqli_num_rows($result);
 
 if($row == 1) {
 	$_SESSION['usuario'] = $usuario;
-	header('Location: painel.php');
+	header('Location: ../home.html');
 	exit();
 } else {
 	$_SESSION['nao_autenticado'] = true;
