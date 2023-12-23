@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - GymUP</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+
     <link rel="stylesheet" href="../gymup/estilos/login.css">
     <link rel="stylesheet" href="../gymup/estilos/media-query.css">
 </head>
@@ -18,14 +21,33 @@
             <div id="imagem"></div>
 
             <div id="form">
-               
+                <h1>LOGIN</h1>
+                <p>Faça o login preenchendo os campos a seguir.</p>
                 <form action="login.php" method="POST" autocomplete="off">
                     <!--cria relação entre o <p> e o <input> utilizando o <label>-->
-                    <p><label for="iuser">Usuario:</label> <input type="text" name="user" id="iuser" minlength="8"
-                            maxlength="20" required></p>
-                    <p><label for="ipassword">Senha: </label><input type="password" name="password" id="ipassword"
-                            required inlength="8" maxlength="20"></p>
-                    <p><input type="submit" value="Enviar"></p>
+
+                    <div class="campo">
+                        <i class="material-icons">
+                            account_circle
+                        </i>
+                        <input type="text" name="user" id="iuser" minlength="8" maxlength="20" placeholder="User"
+                            required>
+                        <label for="iuser">Usuario</label>
+                        <br>
+
+                    </div>
+                    <div class="campo">
+                        <i class="material-icons">
+                            vpn_key
+                        </i>
+                        <input placeholder="Password" type="password" name="password" id="ipassword" required
+                            inlength="8" maxlength="20">
+                        <label for="ipassword">Senha</label>
+                        <br>
+
+                    </div>
+                    <input type="submit" value="Enviar">
+                    
             </div>
             </form>
         </section>

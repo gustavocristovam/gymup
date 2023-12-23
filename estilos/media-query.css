@@ -1,34 +1,53 @@
 @charset "UTF-8";
 
 
+
+
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
     section#login {
         width: 90vw;
+        flex-direction: row;
         
     }
 
     section#login > div#imagem {
         background-position: center center;
-        float: left;
-        width: 50%;
+       
+        width: 40%;
         height: 100%;
     }
 
+ section#login > div#form {
+    
+   width: 60%;
+   height: 100%;
+    
 
+ }
     
 }
 
 @media screen and (min-width: 992px) {
     section#login {
     width: 900px;
+    flex-direction: row;
 
     }
 
     section#login > div#imagem {
         background-position: center center;
-        float: right;
+       
         width: 50%;
         height: 100%;
         background-image: url(../imagems/gumball.jpg);
     }
+
+    section#login > div#form {
+    
+        width: 50%;
+        height: 100%;
+         
+     
+      }
 }
