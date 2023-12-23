@@ -15,17 +15,11 @@
 
 
     </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="workout.html">Treino</a>
-        <a href="login.html">Login</a>
-        <a href="#">Contato</a>
-    </nav>
     <main>
-        <div class="form">
+        <div class="container">
 
-            <div id="login">
-                <section id="login">
+            <div class="content">
+                <section>
                     <h1 style="text-align: center;">LOGIN</h1>
                     <form action="login.php" method="POST" autocomplete="off">
                         <!--cria relação entre o <p> e o <input> utilizando o <label>-->
@@ -38,14 +32,14 @@
                 </section>
             </div>
 
-            <div id="cadastro">
+            <div class="content">
                 <section id="cadastro">
                     <h1 style="text-align: center;">CADASTRO</h1>
                     <form action="cadastro.php" method="POST" autocomplete="off">
                         <!--cria relação entre o <p> e o <input> utilizando o <label>-->
                         <p><label for="iuser">Usuario:</label> <input type="text" name="user" id="iuser" minlength="8"
                                 maxlength="20" required></p>
-                        <p><label for="iemail">Email:</label> <input type="text" name="email" id="iemail" minlength="8"
+                        <p><label for="iemail">Email:</label> <input type="email" name="email" id="iemail" minlength="8"
                                 maxlength="20" required></p>
                         <p><label for="ipassword">Senha: </label><input type="password" name="password" id="ipassword"
                                 required inlength="8" maxlength="20"></p>
@@ -55,7 +49,7 @@
             </div>
         </div>
     </main>
-    <footer style="margin-top: 800px;">
+    <footer style="margin-top: 500px;">
         <p>Site desenvolvido por <a class='externo ' href="https://github.com/gustavocristovam" target="_blank">Gustavo
                 Cristovam</a></p>
     </footer>

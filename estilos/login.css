@@ -2,63 +2,52 @@
 
 
 
-div.form {
-    position: relative;
-    border: black solid 1px;
-    height: 500px;
-    
-    
+header {
+    background-image: none;
 }
 
-div#login {
-    border: red solid 1px;
-    height: 500px;
-    
-   width: 50cap;
-    display:inline-block;
-}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.2rem;
 
-div#cadastro {
-    border: green solid 1px;
-    height: 500px;
-    left: 50%;
-    top: 50%;
-    width: 50cap;
-    display:inline-block;
-}
+    width: 100%;
+    
+  }
+  
+  .content {
+  }
+
 
 section {
    
-    background-color: var(--Azul-2);
+    background-color: red;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.527);
     border: black solid 1px;
     padding: 5px;
+    width: 400px;
+    height: 250px;
 }
 
-
-section#login {
-   position: absolute;
- 
-  
-}
 
 section#cadastro {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+   
+    height: 350px;
 }
 
-
-section.form p, h1 {
+section p, h1 {
     color: white;
     font-weight: bold;
     text-align: center;
+    font-size: 2em;
+
 }
 
-section.form input {
-   padding: 3px;
+section input {
+   padding: 10px;
+ 
    
    
 }
