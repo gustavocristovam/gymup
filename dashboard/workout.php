@@ -14,7 +14,7 @@
     <header>
     </header>
     <nav>
-        <a href="index.html">Home</a>
+        <a href="/">Home</a>
         <a href="#">Treino</a>
         <a href="#">Login</a>
         <a href="#">Contato</a>

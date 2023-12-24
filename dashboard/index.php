@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -15,13 +16,15 @@
 
 
     <header>
-
+        <div>
+            <h1>BEM VINDO GUSTAVO</h1>
+        </div>
 
     </header>
     <nav>
         <a href="#">Home</a>
-        <a href="workout.html">Treino</a>
-        <a href="login.html">Login</a>
+        <a href="workout">Treino</a>
+        <a href="login">Login</a>
         <a href="#">Contato</a>
     </nav>
 

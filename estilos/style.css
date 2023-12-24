@@ -39,11 +39,19 @@ nav {
     padding: 13px 0px 13px 0px;
     
 }
-
+header{
+    
+   background-color: #F53B0F;
+   
+   
+  
+}
 header h1 {
     margin: 0px;
-    padding: 10px;
+    
     font-variant: small-caps;
+    color: white ;
+    text-align: center;
 }
 nav a {
     text-decoration: none;
@@ -74,18 +82,7 @@ nav a:hover {
     
 }
 
-header{
-    
-    text-align: center;
-    width: 100vw;
-    height: 30vh;
-    background-size: cover;
-    background-image: url(../imagems/Academias.jpeg) ;
-    background-repeat: no-repeat;
-    
-   
-  
-}
+
 
 a.externo::after {
     content: '\00A0\1F4BB';
@@ -153,10 +150,7 @@ main {
    
    
 }
-header h1 {
-    color: white;
-    text-align: center;
-}
+
 
 
 h1, h2{
