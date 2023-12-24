@@ -7,7 +7,7 @@ session_unset();
 
 // Destruir a sessão
 session_destroy();
-
+header("Location: ../");
 // Redirecionar para a página de login (ou qualquer outra página)
 exit();
 ?>

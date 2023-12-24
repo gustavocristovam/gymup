@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+// Verificar se a sessão está ativa
+if (!isset($_SESSION['usuario'])) {
+    // Se não houver uma sessão ativa, redirecionar para a página de login
+    header('Location: ../');
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,16 +15,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workouy</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../estilos/style.css">
     <link rel="stylesheet" href="../estilos/workout.css">
 
 </head>
 
 <body>
-    <header>
+<header>
+        <div id='login'>
+            <h1>
+                <?php echo 'Bem-vindo, ' . $_SESSION['usuario']; ?>
+            </h1>
+
+            <div class='tooltip'>
+                <a href="../request/logout.php">
+                    <i class="material-icons">
+                        meeting_room
+                    </i>
+                </a>
+                <div class='tooltip-text'>
+                    Sair
+                </div>
+            </div>
+        </div>
+
     </header>
     <nav>
-        <a href="/">Home</a>
+        <a href="/dashboard/">Home</a>
         <a href="#">Treino</a>
         <a href="#">Login</a>
         <a href="#">Contato</a>

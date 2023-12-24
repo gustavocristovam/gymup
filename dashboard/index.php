@@ -1,5 +1,12 @@
 <?php
 session_start();
+
+// Verificar se a sessão está ativa
+if (!isset($_SESSION['usuario'])) {
+    // Se não houver uma sessão ativa, redirecionar para a página de login
+    header('Location: ../');
+    exit();
+}
 ?>
 
 
@@ -27,7 +34,7 @@ session_start();
             </h1>
 
             <div class='tooltip'>
-                <a href="../request/login.php">
+                <a href="../request/logout.php">
                     <i class="material-icons">
                         meeting_room
                     </i>
