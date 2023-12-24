@@ -1,13 +1,4 @@
-<?php
-session_start();
 
-// Verificar se a sessão está ativa
-if (!isset($_SESSION['usuario'])) {
-    // Se não houver uma sessão ativa, redirecionar para a página de login
-    header('Location: ../');
-    exit();
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,7 +16,7 @@ if (!isset($_SESSION['usuario'])) {
 <header>
         <div id='login'>
             <h1>
-                <?php echo 'Bem-vindo, ' . $_SESSION['usuario']; ?>
+                Bem-vindo Gustavo
             </h1>
 
             <div class='tooltip'>
