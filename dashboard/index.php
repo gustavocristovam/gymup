@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -6,6 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../estilos/style.css" media="all">
 </head>
 
@@ -16,8 +21,21 @@
 
 
     <header>
-        <div>
-            <h1>BEM VINDO GUSTAVO</h1>
+        <div id='login'>
+            <h1>
+                <?php echo 'Bem-vindo, ' . $_SESSION['usuario']; ?>
+            </h1>
+
+            <div class='tooltip'>
+                <a href="../request/login.php">
+                    <i class="material-icons">
+                        meeting_room
+                    </i>
+                </a>
+                <div class='tooltip-text'>
+                    Sair
+                </div>
+            </div>
         </div>
 
     </header>
