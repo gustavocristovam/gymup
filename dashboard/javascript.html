@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="../estilos/style.css" media="all">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        li {
+            list-style-type: '\1F862\0020\0020';
+           
+        }
+
+        div.nomes > ul > li {
+            text-decoration: underline;
+        }
+    </style>
+
+
+
+
+    <header>
+        <div id='login'>
+            <h1>
+                Bem-vindo Gustavo
+            </h1>
+
+            <div class='tooltip'>
+                <a href="../index.html">
+                    <i class="material-icons">
+                        meeting_room
+                    </i>
+                </a>
+                <div class='tooltip-text'>
+                    Sair
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+
+        <h1>Teste de JavaScript</h1>
+        <p>Selecione algum nome abaixo:</p>
+        <div class="nomes" onclick="nome()">
+            <ul>
+                <li id="g">Gustavo</li>
+                <li id="b">Bernado</li>
+                <li id="y">Ygor</li>
+            </ul>
+        </div>
+        <h2 id="nomeselect">O nome selecionado foi:</h2>
+
+    </main>
+    <script>
+        let nomes = window.document.getElementById
+        nomes.
+        ('nomeselect')
+        function nome() {
+
+            nomes.innerText = 'Nome selecionado: NAO SEI KK'
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
