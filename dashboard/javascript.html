@@ -11,13 +11,8 @@
 
 <body>
     <style>
-        li {
-            list-style-type: '\1F862\0020\0020';
-           
-        }
-
-        div.nomes > ul > li {
-            text-decoration: underline;
+        p {
+            display: inline;
         }
     </style>
 
@@ -43,33 +38,33 @@
         </div>
 
     </header>
+
     <main>
 
+
         <h1>Teste de JavaScript</h1>
-        <p>Selecione algum nome abaixo:</p>
-        <div class="nomes" onclick="nome()">
-            <ul>
-                <li id="g">Gustavo</li>
-                <li id="b">Bernado</li>
-                <li id="y">Ygor</li>
-            </ul>
-        </div>
-        <h2 id="nomeselect">O nome selecionado foi:</h2>
-
+        <p>Nome:</p>
+        <input type="text" name="user" id="userid">
+        <p>Ano de nascimento:</p>
+        <input type="number" min="1900" max="2099" step="1" name="year" id="yearid"/>
+        <input type="button" value="CALCULAR" onclick="calculo()">
+        <h2 id="result">...</h2>
     </main>
+
+
     <script>
-        let nomes = window.document.getElementById
-        nomes.
-        ('nomeselect')
-        function nome() {
+       
+        function calculo() {
+            let anoatual = 2023
+            let anonascimento = document.getElementById('yearid').value
+            let nome = document.getElementById('userid').value
+            let idade_atual = anoatual - Number(anonascimento)
 
-            nomes.innerText = 'Nome selecionado: NAO SEI KK'
-
-        }
-
-
+           
+            window.document.getElementById('result').innerText =`${nome} sua idade é de ${idade_atual}`
+            }
+           
     </script>
-
 </body>
 
 </html>
