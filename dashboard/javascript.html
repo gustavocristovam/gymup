@@ -11,9 +11,7 @@
 
 <body>
     <style>
-        p {
-            display: inline;
-        }
+      
     </style>
 
 
@@ -48,7 +46,7 @@
         <p>Ano de nascimento:</p>
         <input type="number" min="1900" max="2099" step="1" name="year" id="yearid"/>
         <input type="button" value="CALCULAR" onclick="calculo()">
-        <h2 id="result">...</h2>
+        <div id="result">...</div>
     </main>
 
 
@@ -60,10 +58,14 @@
             let nome = document.getElementById('userid').value
             let idade_atual = anoatual - Number(anonascimento)
 
-           
-            window.document.getElementById('result').innerText =`${nome} sua idade é de ${idade_atual}`
+            resultado = window.document.getElementById('result')
+            resultado.innerHTML =`<p>${nome} sua idade é de ${idade_atual}</p>`
+            if (idade_atual < 18) {
+                resultado.innerHTML += '<p>Você é de <strong>MENOR!</strong></p>'
+            } else {
+                resultado.innerHTML += '<p>Você é de <strong>MAIOR!</strong></p>'
             }
-           
+        }
     </script>
 </body>
 
