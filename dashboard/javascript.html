@@ -50,23 +50,7 @@
     </main>
 
 
-    <script>
-       
-        function calculo() {
-            let anoatual = 2023
-            let anonascimento = document.getElementById('yearid').value
-            let nome = document.getElementById('userid').value
-            let idade_atual = anoatual - Number(anonascimento)
-
-            resultado = window.document.getElementById('result')
-            resultado.innerHTML =`<p>${nome} sua idade é de ${idade_atual}</p>`
-            if (idade_atual < 18) {
-                resultado.innerHTML += '<p>Você é de <strong>MENOR!</strong></p>'
-            } else {
-                resultado.innerHTML += '<p>Você é de <strong>MAIOR!</strong></p>'
-            }
-        }
-    </script>
+   <script src="../script/script.js"></script>
 </body>
 
 </html>
