@@ -11,7 +11,7 @@
 
 <body>
     <style>
-      
+
     </style>
 
 
@@ -40,17 +40,33 @@
     <main>
 
 
-        <h1>Teste de JavaScript</h1>
-        <p>Nome:</p>
-        <input type="text" name="user" id="userid">
-        <p>Ano de nascimento:</p>
-        <input type="number" min="1900" max="2099" step="1" name="year" id="yearid"/>
-        <input type="button" value="CALCULAR" onclick="calculo()">
-        <div id="result">...</div>
+        <section>
+            <h1>Teste de JavaScript</h1>
+            <p>Nome:</p>
+            <input type="text" name="user" id="userid">
+            <p>Ano de nascimento:</p>
+            <input type="number" min="1900" max="2099" step="1" name="year" id="yearid" />
+            <input type="button" value="CALCULAR" onclick="calculo()">
+            <div id="result">...</div>
+        </section>
+        <section>
+            <div>
+                <br>
+                <h1>Jump-Numbers</h1>
+                <p>Inicio:</p>
+                <input type="number" name="start" id="startid" required>
+                <p>Fim</p>
+                <input type="number" name="end" id="endid" required>
+                <p>Pular a cada:</p>
+                <input type="number" name="jump" id="jumpid" required>
+                <input type="button" value="CONTAR" onclick="contar()">
+            </div>
+            <div id="saida">...</div>
+        </section>
     </main>
 
 
-   <script src="../script/script.js"></script>
+    <script src="../script/script.js"></script>
 </body>
 
 </html>
